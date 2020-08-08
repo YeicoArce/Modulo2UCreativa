@@ -6,9 +6,10 @@ const Page = require('./page');
 class navigationPage extends Page {
     /**
      * define selectors using getter methods
+     * //prueba
      */
     get conduitLabel () { return $('a.navbar-brand.ng-binding') }
-    get signInLink () { return $('=Sign in') }
+    get signInLink () { return $('a=Sign in') }
     get signUpLink () { return $('*=up') }
 
     goToSignIn() {
